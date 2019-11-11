@@ -1,0 +1,16 @@
+<p>
+  products works!
+</p>
+<h2>Product List</h2>
+
+<div>
+  <input type="text" [(ngModel)]="title">
+  <input type="text" [(ngModel)]="description">
+  <input type="number" [(ngModel)]="price">
+  <button (click)="addProduct()">Add Product</button>
+</div>
+<div>
+  <li *ngFor="let product of allProducts">
+    Product Title: {{product.title}} :: Product Description: {{product.description}} Product Price: {{product.price}}
+  </li>
+</div>
