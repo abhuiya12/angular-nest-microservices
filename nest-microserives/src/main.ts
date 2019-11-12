@@ -10,8 +10,8 @@ const logger = new Logger('Main');
 const microserviceOptions = {
   transport: Transport.TCP,
   options: {
-    host: 'localhost',
-    port: 3002,
+    host: '127.0.0.1',
+    port: 3005,
   },
 };
 

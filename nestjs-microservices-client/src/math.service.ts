@@ -9,8 +9,8 @@ export class MathService {
         this.client = ClientProxyFactory.create({
             transport : Transport.TCP,
             options: {
-                host: 'localhost',
-                port: 3001,
+                host: '127.0.0.1',
+				port: 3005,
             },
         });
     }
